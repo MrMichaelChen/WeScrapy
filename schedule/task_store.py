@@ -12,4 +12,8 @@ class Task_Store(object):
         url_list = []
         for line in self.receive_info:
             url_list.append(url_list.append(self.receive_info[0]))
-            
+        return url_list
+
+if __name__=="__main__":
+    task = Task_Store()
+    print task.get_url()

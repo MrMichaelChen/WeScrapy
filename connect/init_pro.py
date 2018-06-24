@@ -19,7 +19,9 @@ class ConnectionProtocol(Protocol):
     def __int__(self):
         self.div_name = ""
         self.status = False
-
+        self.weight = 50
+        self.cur_weight = 50
+        self.work_num = 0
     def connectionMade(self):
         self.factory.numProtocols += 1
         self.div_name = 'ConnectionPlatform'
